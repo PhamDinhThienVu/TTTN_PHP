@@ -1,0 +1,112 @@
+    /* Style cho form đăng nhập */
+    body {
+      padding-top: 50px; /* Đảm bảo không bị che bởi navbar */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Đảm bảo body chiếm hết chiều cao màn hình */
+    }
+
+    .container {
+     flex: 1;
+     display: flex;
+      align-items: center; /* Canh theo chiều dọc */
+       justify-content: center; /* Canh theo chiều ngang */
+
+   }
+
+  .container .row {
+     width: 100%;
+     }
+
+
+   .container .row .col-md-6 {
+       background-color: white;
+        padding: 30px;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+
+   .form-group {
+       margin-bottom: 15px;
+   }
+
+   .form-group label {
+       display: block;
+       margin-bottom: 5px;
+       font-weight: bold;
+   }
+
+   .form-group input[type="text"],
+   .form-group input[type="password"],
+   .form-group input[type="email"],
+   .form-group input[type="tel"] {
+       width: 100%;
+       padding: 12px;
+       border: 1px solid #ced4da;
+       border-radius: 5px;
+       box-sizing: border-box;
+   }
+
+   .form-group input[type="text"]:focus,
+   .form-group input[type="password"]:focus,
+   .form-group input[type="email"]:focus,
+   .form-group input[type="tel"]:focus {
+       border-color: #00BCD4;
+       outline: none;
+       box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+   }
+
+   .btn-primary {
+      background-color: #00BCD4;
+      /* Màu nền của button đăng nhập */
+      color: white;
+     /* Màu chữ của button đăng nhập */
+       border: none;
+     padding: 12px 20px;
+       border-radius: 5px;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+       font-weight: bold;
+       margin-top: 10px;
+
+    }
+
+    .btn-primary:hover {
+       background-color: #ffe480;
+    }
+
+  .container p a {
+       color: #00BCD4;
+       text-decoration: none;
+       transition: color 0.3s ease;
+    text-align: center;
+       display: block; /* Make the link take up full width */
+   }
+    .container p {
+         text-align: center;
+     }
+  .container p a:hover {
+       text-decoration: underline;
+  }
+
+  .container h2 {
+       margin-bottom: 20px;
+       text-align: center;
+       color: #343a40;
+        /* Thay đổi màu cho heading */
+    }
+
+
+  /* Điều chỉnh cho màn hình nhỏ */
+  @media (max-width: 768px) {
+     .container {
+          padding: 0 15px; /* Giảm padding */
+     }
+       .container .row {
+          max-width: 100%; /* Full width trên màn hình nhỏ */
+      }
+      .container .row .col-md-6{
+            padding: 20px; /* Giảm padding trên thiết bị nhỏ */
+        }
+   }

@@ -1,0 +1,84 @@
+/* Style cho trang admin */
+body {
+  background-color: #f8f9fa; /* Màu nền xám nhẹ */
+}
+
+#sidebarMenu {
+min-height: 100vh;
+ background-color: white; /* Màu nền trắng */
+   border-right: 1px solid rgba(0,0,0,0.1)
+}
+.nav-link {
+   color: #333;  /* Màu chữ xám đậm */
+     transition: color 0.3s ease;
+    padding-left: 30px;
+
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 200, 0, 0.2); /* Màu hover vàng nhạt */
+     color: #ffc800; /* Màu chữ vàng */
+
+}
+ .nav-link.active {
+       background-color: rgba(255, 200, 0, 0.25);
+     color: #ffc800; /* Màu chữ vàng */
+
+ }
+
+ .nav-link i{
+     margin-right: 10px;
+ }
+
+.navbar-dark {
+ --bs-navbar-color: #FFCA29; /* Màu chữ trên navbar */
+ --bs-navbar-hover-color: #FFD700; /* Màu hover navbar */
+   background-color:  white !important; /* Màu nền trắng của navbar */
+}
+.navbar-nav{
+  list-style: none; /* Thêm dòng này để loại bỏ dấu chấm list */
+}
+ .navbar-brand{
+ color: black; /* đổi màu logo thành màu đen */
+
+}
+  .btn-outline-light {
+  color: black;
+ background-color: transparent;
+   border-color: rgba(0, 0, 0, 0.1);
+}
+.btn-outline-light:hover {
+ background-color:   rgba(0, 0, 0, 0.1);
+  border-color:  rgba(0, 0, 0, 0.1);
+}
+ .btn-outline-light:focus{
+       background-color:  rgba(0, 0, 0, 0.1);
+      border-color:  rgba(0, 0, 0, 0.1);
+ }
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+     display: block;
+     }
+     .dropdown-menu{
+         position: absolute;
+         background-color: white;
+         border: 1px solid  rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         display: none;
+           top: 100%;
+          left: auto; /* Để dropdown căn phải */
+        z-index: 1000;
+         }
+          .dropdown-menu.show {
+     display: block;
+ }
+.dropdown-item{
+        color: #333;
+ padding: 10px 15px;
+ transition: background-color 0.3s ease;
+ display: block;
+}
+ .dropdown-item:hover{
+   background-color: #f8f9fa;
+ }
