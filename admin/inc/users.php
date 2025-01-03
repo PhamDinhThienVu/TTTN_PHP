@@ -1,6 +1,14 @@
-<div class="tab-pane fade show active" id="users">
+
   <h3>Quản lý người dùng</h3>
   <p>Danh sách người dùng</p>
+
+
+  <form method="get" action="index.php" class="mb-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Tìm kiếm theo tên hoặc email" name="search"  value="<?php echo isset($_GET['search']) ? htmlspecialchars($_GET['search']) : ''; ?>">
+             <button class="btn btn-outline-secondary" type="submit">Tìm kiếm</button>
+           </div>
+       </form>
 
   <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addUserModal">Thêm người dùng</button>
   <?php

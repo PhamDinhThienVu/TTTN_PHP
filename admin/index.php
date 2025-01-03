@@ -19,11 +19,14 @@ if (!isset($_SESSION['username'])) {
             <?php include 'inc/sidebar.php'; ?>
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="tab-content">
+                <div class="tab-pane fade show active" id="users">
                    <?php include 'inc/users.php'; ?>
-                   <div class="tab-pane fade" id="recruits">
-                       <h3>Quản lý tin tuyển dụng</h3>
-                        <p>Danh sách tin tuyển dụng</p>
-                    </div>
+                   </div>
+
+                   <div class="tab-pane fade " id="recruits">
+                    <?php include 'inc/recruits.php'; ?>
+                   </div>
+
                      <div class="tab-pane fade" id="blogs">
                            <h3>Quản lý blog</h3>
                          <p>Danh sách blog</p>
